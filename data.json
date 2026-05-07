@@ -1,36 +1,52 @@
 {
-  "skills": [
-    {
-      "name": "Blink",
-      "link": "https://1axen.github.io/blink/",
-      "iconUrl": "https://github.com/1Axen/blink/blob/main/docs/public/letter.png?raw=true"
-    },
-    {
-      "name": "Argon",
-      "link": "https://argon.wiki/",
-      "iconUrl": "https://github.com/argon-rbx/argon-assets/blob/main/argon_logo.png?raw=true"
-    },
-    {
-      "name": "Rojo",
-      "link": "https://rojo.space/",
-      "iconUrl": "https://github.com/rojo-rbx.png"
-    },
-    {
-      "name": "React Lua",
-      "link": "https://react.luau.page/",
-      "iconUrl": "https://raw.githubusercontent.com/jsdotlua/branding/main/Logo.png"
-    },
-    {
-      "name": "Vide",
-      "link": "https://centau.github.io/vide/",
-      "iconUrl": "https://raw.githubusercontent.com/centau/vide/19eaeb424fe06168772f8e6d5aaaf3ab5e78a316/docs/public/logo.svg"
-    },
-    {
-      "name": "Wally",
-      "link": "https://wally.run/",
-      "iconUrl": "https://raw.githubusercontent.com/UpliftGames/wally/f57807842eabc9228e31d23a89c7a3e9356b6c95/wally-logo.svg"
-    }
-  ],
+  "skills": {
+    "Libraries": [
+      {
+        "name": "Blink",
+        "link": "https://1axen.github.io/blink/",
+        "iconUrl": "https://github.com/1Axen/blink/blob/main/docs/public/letter.png?raw=true",
+        "description": "Fast, strictly typed networking library."
+      },
+      {
+        "name": "Conch",
+        "link": "https://alicesaidhi.github.io/conch/",
+        "iconUrl": "https://raw.githubusercontent.com/alicesaidhi/conch/7d4de0a5f1267dd8630b31478dedf2f3d8c60b40/docs/public/logo.svg",
+        "description": "Command implementation library."
+      },
+      {
+        "name": "React Lua",
+        "link": "https://react.luau.page/",
+        "iconUrl": "https://raw.githubusercontent.com/jsdotlua/branding/main/Logo.png",
+        "description": "Declarative UI library for Roblox."
+      },
+      {
+        "name": "Vide",
+        "link": "https://centau.github.io/vide/",
+        "iconUrl": "https://raw.githubusercontent.com/centau/vide/19eaeb424fe06168772f8e6d5aaaf3ab5e78a316/docs/public/logo.svg",
+        "description": "Reactive UI library for Roblox."
+      }
+    ],
+    "Tools": [
+      {
+        "name": "Argon",
+        "link": "https://argon.wiki/",
+        "iconUrl": "https://github.com/argon-rbx/argon-assets/blob/main/argon_logo.png?raw=true",
+        "description": "Modern development tool for Roblox Studio."
+      },
+      {
+        "name": "Rojo",
+        "link": "https://rojo.space/",
+        "iconUrl": "https://github.com/rojo-rbx.png",
+        "description": "Professional sync tool for external editors."
+      },
+      {
+        "name": "Wally",
+        "link": "https://wally.run/",
+        "iconUrl": "https://raw.githubusercontent.com/UpliftGames/wally/f57807842eabc9228e31d23a89c7a3e9356b6c95/wally-logo.svg",
+        "description": "Package manager."
+      }
+    ]
+  },
   "games": [
     {
       "title": "Collect Fruits & Get Rich!",

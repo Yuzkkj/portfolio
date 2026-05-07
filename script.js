@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (youtubeId) {
             // Return YouTube iframe embed
-            return `<iframe src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=1&loop=1&playlist=${youtubeId}&controls=0&showinfo=0&rel=0&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;"></iframe>`;
+            return `<iframe src="https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=1&loop=1&playlist=${youtubeId}&rel=0&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="width: 100%; height: 100%; object-fit: cover;"></iframe>`;
         } else {
             // Return standard video tag
             return `<video src="${url}" autoplay loop muted playsinline></video>`;
@@ -46,27 +46,45 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Render Skills
     const skillsContainer = document.getElementById('skills-container');
     if (data.skills) {
-        data.skills.forEach(skill => {
-            const skillEl = document.createElement(skill.link ? 'a' : 'div');
-            skillEl.className = 'skill-tag';
+        skillsContainer.innerHTML = ''; // Clear existing
+        skillsContainer.className = 'skills-layout'; // Remove old flex wrap class if any, use new layout
+
+        for (const [category, skills] of Object.entries(data.skills)) {
+            const categoryEl = document.createElement('div');
+            categoryEl.className = 'skill-category fade-in';
             
-            if (skill.link) {
-                skillEl.href = skill.link;
-                skillEl.target = '_blank';
-                skillEl.style.textDecoration = 'none';
-                skillEl.style.color = 'inherit';
-            }
+            const categoryTitle = document.createElement('h3');
+            categoryTitle.className = 'category-title';
+            categoryTitle.textContent = category;
+            categoryEl.appendChild(categoryTitle);
+            
+            const cardsGrid = document.createElement('div');
+            cardsGrid.className = 'skill-card-grid';
+            
+            skills.forEach(skill => {
+                const skillEl = document.createElement(skill.link ? 'a' : 'div');
+                skillEl.className = 'skill-tag';
+                if (skill.link) {
+                    skillEl.href = skill.link;
+                    skillEl.target = '_blank';
+                    skillEl.style.textDecoration = 'none';
+                    skillEl.style.color = 'inherit';
+                }
 
-            let iconHtml = '';
-            if (skill.iconUrl) {
-                iconHtml = `<img src="${skill.iconUrl}" alt="${skill.name}" style="width: 24px; height: 24px; border-radius: 50%; object-fit: contain;">`;
-            } else if (skill.icon) {
-                iconHtml = `<i class="${skill.icon}"></i>`;
-            }
+                let iconHtml = '';
+                if (skill.iconUrl) {
+                    iconHtml = `<img src="${skill.iconUrl}" alt="${skill.name}" style="width: 24px; height: 24px; border-radius: 2px; object-fit: contain;">`;
+                } else if (skill.icon) {
+                    iconHtml = `<i class="${skill.icon}"></i>`;
+                }
 
-            skillEl.innerHTML = `${iconHtml} ${skill.name}`;
-            skillsContainer.appendChild(skillEl);
-        });
+                skillEl.innerHTML = `${iconHtml} ${skill.name}`;
+                cardsGrid.appendChild(skillEl);
+            });
+            
+            categoryEl.appendChild(cardsGrid);
+            skillsContainer.appendChild(categoryEl);
+        }
     }
 
     // Render Games
