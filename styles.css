@@ -424,6 +424,12 @@ span {
     box-shadow: 0 0 20px rgba(88, 101, 242, 0.5);
 }
 
+.social-icon.github:hover {
+    background: #24292e;
+    border-color: #24292e;
+    box-shadow: 0 0 20px rgba(36, 41, 46, 0.5);
+}
+
 .copyright {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.3) !important;
