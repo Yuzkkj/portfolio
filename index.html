@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imgs/icon.png">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,13 +29,16 @@
                 <img src="imgs/icon.png" alt="Profile" class="profile-icon">
                 Yuz's<span> Portfolio</span>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Tech Stack</a></li>
                 <li><a href="#games">Games</a></li>
                 <li><a href="#systems">Systems</a></li>
                 <li><a href="#commissions">Commissions</a></li>
             </ul>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
@@ -95,6 +100,10 @@
             <p class="copyright">&copy; <span id="year"></span> Yuz's Portfolio. All rights reserved.</p>
         </div>
     </footer>
+
+    <button id="back-to-top" class="back-to-top" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
