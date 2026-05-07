@@ -50,27 +50,20 @@
   "games": [
     {
       "title": "Collect Fruits & Get Rich!",
-      "description": "A simple simulator game where you collect fruits.",
+      "description": "A simple simulator game where you collect fruits that I made just for fun.",
       "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
       "gameLink": "https://www.roblox.com/games/124332690140725"
     },
     {
-      "title": "Snowball Battle",
-      "description": "A fast-paced PvP game where you throw snowballs at other players.",
-      "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-      "gameLink": "https://www.roblox.com/games/72557308152846"
+      "title": "My Fishing Brainrot",
+      "description": "A template for My Fishing Brainrot like games that I made for a commission.",
+      "videoUrl": "https://youtu.be/T-SqvKpZ2rI"
     }
   ],
   "systems": [
     {
       "title": "Settings System",
       "videoUrl": "https://youtu.be/Zk2kj5e8v1M"
-    }
-  ],
-  "commissions": [
-    {
-      "title": "My Fishing Brainrot Template",
-      "videoUrl": "https://youtu.be/T-SqvKpZ2rI"
     }
   ]
 }

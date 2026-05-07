@@ -121,22 +121,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Render Commissions
-    const commissionsContainer = document.getElementById('commissions-container');
-    if (data.commissions) {
-        data.commissions.forEach(comm => {
-            const commEl = document.createElement('div');
-            commEl.className = 'card media-card';
-            commEl.innerHTML = `
-                <div class="video-container">
-                    ${generateVideoHTML(comm.videoUrl)}
-                </div>
-                <h3>${comm.title}</h3>
-            `;
-            commissionsContainer.appendChild(commEl);
-        });
-    }
-
     // Set Copyright Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
