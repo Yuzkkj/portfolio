@@ -1,0 +1,60 @@
+{
+  "skills": [
+    {
+      "name": "Blink",
+      "link": "https://github.com/1Axen/blink'",
+      "iconUrl": "https://github.com/1Axen/blink/blob/main/docs/public/letter.png?raw=true"
+    },
+    {
+      "name": "Argon",
+      "link": "https://github.com/argon-rbx/argon",
+      "iconUrl": "https://github.com/argon-rbx/argon-assets/blob/main/argon_logo.png?raw=true"
+    },
+    {
+      "name": "Rojo",
+      "link": "https://github.com/rojo-rbx/rojo",
+      "iconUrl": "https://github.com/rojo-rbx.png"
+    },
+    {
+      "name": "React Lua",
+      "link": "https://github.com/jsdotlua/react-lua",
+      "iconUrl": "https://raw.githubusercontent.com/jsdotlua/branding/main/Logo.png"
+    },
+    {
+      "name": "Vide",
+      "link": "https://github.com/centau/vide",
+      "iconUrl": "https://raw.githubusercontent.com/centau/vide/19eaeb424fe06168772f8e6d5aaaf3ab5e78a316/docs/public/logo.svg"
+    },
+    {
+      "name": "Wally",
+      "link": "https://github.com/UpliftGames/wally",
+      "iconUrl": "https://raw.githubusercontent.com/UpliftGames/wally/f57807842eabc9228e31d23a89c7a3e9356b6c95/wally-logo.svg"
+    }
+  ],
+  "games": [
+    {
+      "title": "Collect Fruits & Get Rich!",
+      "description": "A simple simulator game where you collect fruits.",
+      "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "gameLink": "https://www.roblox.com/games/124332690140725"
+    },
+    {
+      "title": "Snowball Battle",
+      "description": "A fast-paced PvP game where you throw snowballs at other players.",
+      "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "gameLink": "https://www.roblox.com/games/72557308152846"
+    }
+  ],
+  "systems": [
+    {
+      "title": "Settings System",
+      "videoUrl": "https://youtu.be/Zk2kj5e8v1M"
+    }
+  ],
+  "commissions": [
+    {
+      "title": "My Fishing Brainrot Template",
+      "videoUrl": "https://youtu.be/T-SqvKpZ2rI"
+    }
+  ]
+}
