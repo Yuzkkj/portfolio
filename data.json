@@ -16,7 +16,7 @@
       },
       {
         "name": "Conch",
-        "description": "Modern command framework",
+        "description": "Modern command library",
         "link": "https://alicesaidhi.github.io/conch/",
         "iconUrl": "https://raw.githubusercontent.com/alicesaidhi/conch/7d4de0a5f1267dd8630b31478dedf2f3d8c60b40/docs/public/logo.svg"
       },
@@ -35,16 +35,16 @@
     ],
     "Tools": [
       {
-        "name": "Argon",
-        "description": "Tooling environment for Roblox development",
-        "link": "https://argon.wiki/",
-        "iconUrl": "https://github.com/argon-rbx/argon-assets/blob/main/argon_logo.png?raw=true"
-      },
-      {
         "name": "Rojo",
-        "description": "Professional sync tool for Roblox Studio",
+        "description": "Sync tool for external editors",
         "link": "https://rojo.space/",
         "iconUrl": "https://github.com/rojo-rbx.png"
+      },
+      {
+        "name": "Argon",
+        "description": "An alternative for Rojo",
+        "link": "https://argon.wiki/",
+        "iconUrl": "https://github.com/argon-rbx/argon-assets/blob/main/argon_logo.png?raw=true"
       },
       {
         "name": "Wally",
