@@ -19,6 +19,32 @@ document.addEventListener('DOMContentLoaded', async () => {
         return; // Exit if data fails to load
     }
 
+    // 1. Dynamic Years of Experience
+    const startDate = new Date('2023-07-08');
+    const currentDate = new Date();
+    let yearsOfExperience = currentDate.getFullYear() - startDate.getFullYear();
+    const m = currentDate.getMonth() - startDate.getMonth();
+    if (m < 0 || (m === 0 && currentDate.getDate() < startDate.getDate())) {
+        yearsOfExperience--;
+    }
+    const subtitleEl = document.getElementById('experience-subtitle');
+    if (subtitleEl) {
+        subtitleEl.textContent = `${yearsOfExperience} years building immersive games, advanced systems, and bringing ideas to life.`;
+    }
+
+    // 2. Availability Status
+    const availabilityEl = document.getElementById('availability-status');
+    if (availabilityEl && data.hasOwnProperty('availableToWork')) {
+        availabilityEl.style.display = 'inline-flex';
+        if (data.availableToWork) {
+            availabilityEl.innerHTML = `<span class="status-indicator online"></span> Available for Work`;
+            availabilityEl.className = 'status-badge available';
+        } else {
+            availabilityEl.innerHTML = `<span class="status-indicator offline"></span> Currently Unavailable`;
+            availabilityEl.className = 'status-badge unavailable';
+        }
+    }
+
     // Helper function to generate video HTML (handles YouTube vs MP4)
     function generateVideoHTML(url) {
         if (!url) return '';
@@ -123,6 +149,26 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Set Copyright Year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // UTC Time Update
+    const timeEl = document.getElementById('current-time-utc');
+    if (timeEl) {
+        function updateTime() {
+            // Get current time in UTC-3
+            const now = new Date();
+            const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+            const utcMinus3 = new Date(utc - (3600000 * 3));
+            
+            const timeString = utcMinus3.toLocaleTimeString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: true
+            });
+            timeEl.innerHTML = `<i class="fas fa-clock"></i> Time (UTC-3): ${timeString}`;
+        }
+        updateTime();
+        setInterval(updateTime, 60000); // Update every minute
+    }
 
     /**
      * -------------------------------------------------------------

@@ -28,6 +28,9 @@
             <div class="logo">
                 <img src="imgs/icon.png" alt="Profile" class="profile-icon">
                 Yuz's<span> Portfolio</span>
+                <div id="availability-status" class="status-badge"
+                    style="display: none; margin-bottom: 0; margin-left: 0.5rem; font-size: 0.75rem; padding: 0.3rem 0.6rem; letter-spacing: 0;">
+                </div>
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -43,12 +46,11 @@
 
     <header id="home" class="hero section">
         <div class="hero-content fade-in">
-            <h1 class="title">Roblox <span>Developer</span></h1>
-            <p class="subtitle">Building immersive games, advanced systems, and bringing ideas to life on the Roblox
-                platform.</p>
+            <h1 class="title">Full-stack <span>Roblox Developer</span></h1>
+            <p class="subtitle" id="experience-subtitle"></p>
             <div class="hero-buttons">
-                <a href="#games" class="btn btn-primary">View My Games</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="#games" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Hire Me</a>
             </div>
         </div>
     </header>
@@ -82,19 +84,26 @@
         <div class="footer-content">
             <h2>Let's Work <span>Together</span></h2>
             <p>Interested in collaborating or commissioning a system? Reach out!</p>
+            <p id="current-time-utc" class="current-time"></p>
             <div class="social-links">
+                <a href="https://discordapp.com/users/901235983054438440" target="_blank" class="social-icon discord"
+                    title="Discord">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="https://www.roblox.com/users/3049921175/profile" target="_blank" class="social-icon roblox"
+                    title="Roblox Profile">
+                    <svg viewBox="-2 -2 28 28" width="24" height="24" fill="currentColor">
+                        <path d="M5.4 0L0 20.3L15.3 24L24 5.4L5.4 0ZM13 15.6L8.4 14.5L9.5 10.4L14.2 11.5L13 15.6Z" />
+                    </svg>
+                </a>
                 <a href="https://github.com/Yuzkkj" target="_blank" class="social-icon github" title="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="https://youtube.com/@Yuzkkj" target="_blank" class="social-icon youtube" title="YouTube">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href="https://discordapp.com/users/901235983054438440" target="_blank" class="social-icon discord"
-                    title="Discord">
-                    <i class="fa-brands fa-discord"></i>
-                </a>
             </div>
-            <p class="copyright">&copy; <span id="year"></span> Yuz's Portfolio. All rights reserved.</p>
+            <p class="copyright">&copy; <span id="year"></span> Yuz. All rights reserved.</p>
         </div>
     </footer>
 

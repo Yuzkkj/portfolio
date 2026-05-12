@@ -213,6 +213,60 @@ span {
     margin-bottom: 2.5rem;
 }
 
+/* Status Badge */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+}
+
+.status-badge.available {
+    border-color: rgba(46, 213, 115, 0.3);
+    color: #2ed573;
+}
+
+.status-badge.unavailable {
+    border-color: rgba(255, 71, 87, 0.3);
+    color: #ff4757;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-indicator.online {
+    background-color: #2ed573;
+    box-shadow: 0 0 10px #2ed573;
+    animation: pulse 2s infinite;
+}
+
+.status-indicator.offline {
+    background-color: #ff4757;
+    box-shadow: 0 0 10px #ff4757;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(46, 213, 115, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(46, 213, 115, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(46, 213, 115, 0);
+    }
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -401,11 +455,18 @@ span {
     margin-bottom: 2rem;
 }
 
+.current-time {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-light) !important;
+    margin-bottom: 2rem !important;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .social-icon {
@@ -447,6 +508,13 @@ span {
     background: #24292e;
     border-color: #24292e;
     box-shadow: 0 0 20px rgba(36, 41, 46, 0.5);
+}
+
+.social-icon.roblox:hover {
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 
 .copyright {
