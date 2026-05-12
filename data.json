@@ -50,7 +50,7 @@
         "name": "Wally",
         "description": "Package manager",
         "link": "https://wally.run/",
-        "iconUrl": "https://raw.githubusercontent.com/UpliftGames/wally/f57807842eabc9228e31d23a89c7a3e9356b6c95/wally-logo.svg"
+        "iconUrl": "https://raw.githubusercontent.com/UpliftGames/wally/f57807842eabc9228e31d23a89c7a3e9356b6c95/wally-registry-frontend/public/assets/wally-circle.svg"
       }
     ]
   },
