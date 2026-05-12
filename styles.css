@@ -178,6 +178,7 @@ span {
     width: 100%;
 }
 
+
 /* Sections */
 .section {
     padding: 6rem 2rem;
@@ -365,6 +366,26 @@ span {
     transform: translateY(-2px);
 }
 
+.skill-tag.has-desc {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-desc {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
 /* Games Grid */
 .games-grid {
     display: grid;
@@ -379,6 +400,37 @@ span {
     overflow: hidden;
     margin-bottom: 1rem;
     background: #000;
+    position: relative;
+}
+
+/* Video loading spinner */
+.video-container .video-spinner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.video-container .video-spinner.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.video-spinner-ring {
+    width: 44px;
+    height: 44px;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    border-top-color: var(--primary-light);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }
 
 .game-card video,
@@ -421,6 +473,7 @@ span {
     overflow: hidden;
     margin-bottom: 1.5rem;
     background: #000;
+    position: relative;
 }
 
 .media-card video,
@@ -433,6 +486,14 @@ span {
 
 .media-card h3 {
     font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.media-card p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
     text-align: center;
 }
 
@@ -588,7 +649,7 @@ span {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
         transition: 0.5s ease;
         z-index: 1000;
         border-left: 1px solid var(--border-color);
@@ -599,7 +660,7 @@ span {
     }
 
     .nav-links a {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     .hero-buttons {
@@ -625,5 +686,9 @@ span {
     
     .section {
         padding: 4rem 1.5rem;
+    }
+
+    .skill-tag.has-desc {
+        padding: 0.75rem 1rem;
     }
 }

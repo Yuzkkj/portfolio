@@ -4,21 +4,31 @@
     "Libraries": [
       {
         "name": "Blink",
+        "description": "Fast networking library",
         "link": "https://1axen.github.io/blink/",
         "iconUrl": "https://github.com/1Axen/blink/blob/main/docs/public/letter.png?raw=true"
       },
       {
+        "name": "Charm",
+        "description": "Atomic state manager",
+        "link": "https://github.com/littensy/charm",
+        "iconUrl": "https://github.com/littensy/charm/blob/main/images/logo.png?raw=true"
+      },
+      {
         "name": "Conch",
+        "description": "Modern command framework",
         "link": "https://alicesaidhi.github.io/conch/",
         "iconUrl": "https://raw.githubusercontent.com/alicesaidhi/conch/7d4de0a5f1267dd8630b31478dedf2f3d8c60b40/docs/public/logo.svg"
       },
       {
         "name": "React Lua",
+        "description": "Declarative UI framework",
         "link": "https://react.luau.page/",
         "iconUrl": "https://raw.githubusercontent.com/jsdotlua/branding/main/Logo.png"
       },
       {
         "name": "Vide",
+        "description": "Reactive UI framework",
         "link": "https://centau.github.io/vide/",
         "iconUrl": "https://raw.githubusercontent.com/centau/vide/19eaeb424fe06168772f8e6d5aaaf3ab5e78a316/docs/public/logo.svg"
       }
@@ -26,16 +36,19 @@
     "Tools": [
       {
         "name": "Argon",
+        "description": "Tooling environment for Roblox development",
         "link": "https://argon.wiki/",
         "iconUrl": "https://github.com/argon-rbx/argon-assets/blob/main/argon_logo.png?raw=true"
       },
       {
         "name": "Rojo",
+        "description": "Professional sync tool for Roblox Studio",
         "link": "https://rojo.space/",
         "iconUrl": "https://github.com/rojo-rbx.png"
       },
       {
         "name": "Wally",
+        "description": "Package manager",
         "link": "https://wally.run/",
         "iconUrl": "https://raw.githubusercontent.com/UpliftGames/wally/f57807842eabc9228e31d23a89c7a3e9356b6c95/wally-logo.svg"
       }
@@ -45,23 +58,20 @@
     {
       "title": "Collect Fruits & Get Rich!",
       "description": "A simple simulator game where you collect fruits that I made just for fun.",
-      "videoUrl": "https://youtu.be/XqL6brBrmpk?si=QSNXDNRxc5jsRPao",
+      "videoUrl": "https://youtu.be/XqL6brBrmpk?si=wPL_t-S09Y3CEfoq",
       "gameLink": "https://www.roblox.com/games/124332690140725"
     },
     {
       "title": "My Fishing Brainrot",
       "description": "A template for My Fishing Brainrot like games that I made for a commission.",
-      "videoUrl": "https://youtu.be/T-SqvKpZ2rI"
+      "videoUrl": "https://youtu.be/T-SqvKpZ2rI?si=5BoORsNaoNPKno_M",
+      "gameLink": "https://www.roblox.com/games/127229043910537"
     }
   ],
   "systems": [
     {
       "title": "Settings System",
-      "videoUrl": "https://youtu.be/Zk2kj5e8v1M"
-    },
-    {
-      "title": "Message System",
-      "videoUrl": "https://youtu.be/GhekxBDOlVs?si=-kFVKTbTILvsyxkx"
+      "videoUrl": "https://youtu.be/Zk2kj5e8v1M?si=YztQq1AqU-DKIZ5r"
     }
   ]
 }
